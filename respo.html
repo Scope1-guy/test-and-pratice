@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      margin: 20px;
+      padding: 10px;
+    }
+    .scope{
+      background-color: black;
+      color: yellow;
+      font-size: 30px;
+      padding: 20px;
+    }
+    .divv{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+      gap: 20px;
+    }
+    .divvv{
+      display: flex;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    img{
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+    @media (max-width:768px){
+      .scope{
+      background-color: pink;
+      color: black;
+      font-size: 40px;
+      padding: 25px;
+    }
+    .divv{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    .divvv{
+      display: flex;
+      gap: 30px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      flex: 1fr 1fr calc(60%-40px);
+    }
+    img{
+      max-width: 100%;
+      height: auto;
+      margin-top: 30px;
+    }
+    }
+  </style>
+
+</head>
+<body>
+<div class="divv">
+  <div class="scope">SCOPE</div>
+  <div class="scope">SCOPE</div>
+  <div class="scope">SCOPE</div>
+  <div class="scope">SCOPE</div>
+  <div class="scope">SCOPE</div>
+  <div class="scope">SCOPE</div>
+  <div class="scope">SCOPE</div>
+  <div class="scope">SCOPE</div>
+</div>
+
+<div class="divvv">
+  <div class="scope">SCOPE</div>
+  <div class="scope">SCOPE</div>
+  <div class="scope">SCOPE</div>
+  <div class="scope">SCOPE</div>
+</div>
+<img src="zoom pics/SCOPE.jpg" alt="success">
+</body>
+</html>
